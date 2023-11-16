@@ -55,7 +55,7 @@ try {
         }
 
         { $_."Deleteuser" -eq 'true' } {
-            Remove-CIPPUser -userid $userid -username $Username -tenantFilter $Tenantfilter -ExecutingUser $request.headers.'x-ms-client-principal' -APIName "ExecOffboardUser"
+            #Remove-CIPPUser -userid $userid -username $Username -tenantFilter $Tenantfilter -ExecutingUser $request.headers.'x-ms-client-principal' -APIName "ExecOffboardUser"
         }
 
         { $_."RemoveRules" -eq 'true' } {
